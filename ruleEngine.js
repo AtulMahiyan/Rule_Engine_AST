@@ -223,5 +223,5 @@ document.getElementById('evaluateRuleBtn').addEventListener('click', () => {
     const jsonInput = document.getElementById('jsonInput').value;
     const data = JSON.parse(jsonInput);
     const result = ruleEngine.evaluate_rule(ruleEngine.rules[ruleEngine.rules.length - 1], data);
-    document.getElementById('result').textContent = result ? 'Eligible' : 'Not Eligible';
+    document.getElementById('result').textContent = result ? 'True' : 'False';
 });
