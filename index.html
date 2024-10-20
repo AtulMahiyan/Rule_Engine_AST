@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rule Engine</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 800px; /* Increased max-width */
+            margin: 20px auto;
+        }
+        input, button {
+            padding: 10px;
+            margin: 5px 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        #combinedRules, #result {
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        #ast {
+            margin-top: 20px;
+            border: 1px solid #ccc; /* Added border for better visibility */
+            padding: 10px; /* Added padding */
+        }
+        .node {
+            cursor: pointer;
+            fill: #69b3a2;
+        }
+        line {
+            stroke: #ccc;
+        }
+    </style>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h1>Rule Engine</h1>
+
+    <h3>Create Rule</h3>
+    <input type="text" id="ruleInput" placeholder="Enter your rule here" />
+    <button id="createRuleBtn">Create Rule</button>
+
+    <h3>Rules Created</h3>
+    <div id="rulesList"></div>
+
+    <h3>Combined Rules</h3>
+    <div id="combinedRules"></div>
+    <button id="combineRulesBtn">Combine Rules</button>
+
+    <h3>Evaluate Rule</h3>
+    <input type="text" id="jsonInput" placeholder='{"age": 35, "department": "Sales", "salary": 60000, "experience": 3}' />
+    <button id="evaluateRuleBtn">Evaluate</button>
+
+    <h3>Result</h3>
+    <div id="result"></div>
+
+    <h3>AST Visualization</h3>
+    <div id="ast"></div>
+</div>
+
+<script src="ruleEngine.js"></script>
+</body>
+</html>
