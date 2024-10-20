@@ -6,13 +6,19 @@ This Rule Engine project allows users to create, combine, and evaluate complex l
 
 ## Table of Contents
 
-- Features
-- Tech Stack
-- Installation
-- Usage
-- Design Choices
-- Dependencies
-- License
+1. Features
+
+2. Tech Stack
+
+3. Installation
+
+4. Usage
+
+5. Design Choices
+
+6. Dependencies
+
+7. License
 
 ## Features
 
@@ -42,10 +48,13 @@ This Rule Engine project allows users to create, combine, and evaluate complex l
 
 ## Tech Stack
 
-- HTML
-- CSS
-- JavaScript
-- D3.js (for AST visualization)
+1. HTML
+
+2. CSS
+
+3. JavaScript
+
+4. D3.js (for AST visualization)
 
 ## Installation
 
@@ -66,11 +75,24 @@ To set up the application, follow these steps:
 
 4. **Visualize AST**: The AST for each rule and combined rule will be visualized to provide a structural view of the logical expressions.
 
+## Design Choices
+
+1. Dynamic Rule Creation: Allows users to define and manage complex logical rules with flexible operators (AND, OR).
+
+2. Rule Combination: Facilitates the merging of multiple rules into more complex logical expressions.
+
+3. JSON Data Evaluation: User inputs are evaluated against created rules to check for eligibility.
+
+4. AST Visualization: D3.js is used to visualize the Abstract Syntax Tree (AST), helping users understand the structure of their rules.
+
+5. Simplicity: Focuses on a user-friendly interface and minimal dependencies for ease of use and maintenance.
+
 ## Dependencies
 
 To run the project smoothly, ensure you have the following:
 
 1. **D3.js**: A JavaScript library for producing dynamic, interactive data visualizations in web browsers (used for AST visualization).
+
 2. No other dependencies are required apart from the basic web technologies (HTML, CSS, JavaScript).
 
 ## License
