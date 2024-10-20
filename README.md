@@ -52,7 +52,7 @@ This Rule Engine project allows users to create, combine, and evaluate complex l
 To set up the application, follow these steps:
 
 1. open the repository:
-   https://github.com/yourusername/rule-engine.git
+   https://github.com/AtulMahiyan/Rule_Engine_AST
 
 2. Open the `index.html` file in your web browser to run the application.
 
